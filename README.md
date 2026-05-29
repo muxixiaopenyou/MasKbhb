@@ -75,10 +75,10 @@ The Google Drive folder contains:
 | File / Folder | Description | Destination |
 |---|---|---|
 | `embedding/*.pt` graph files | Pre-computed residue-level spatial graphs | `data/` |
-| `pdb/human_pdb.tar.gz` | Human PDB structure files | `pdb` |
-| `pdb/human_seq.tar.gz` | Human sequence-based structure files | `pdb` |
-| `pdb/mouse_pdb.tar.gz` | Mouse PDB structure files | `pdb` |
-| `pdb/rice_pdb.tar.gz` | Rice PDB structure files | `pdb` |
+| `pdb/human_pdb.tar.gz` | Human PDB structure files | `pdb/` |
+| `pdb/human_seq.tar.gz` | Human sequence-based ESMFold-predicted structure files | `pdb/` |
+| `pdb/mouse_pdb.tar.gz` | Mouse PDB structure files | `pdb/` |
+| `pdb/rice_pdb.tar.gz` | Rice PDB structure files | `pdb/` |
  
 > **Note**: The pre-computed `.pt` graph files are sufficient to reproduce all training and evaluation results.
 ---
