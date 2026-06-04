@@ -6,63 +6,7 @@
 
 ## The Structure of This Project
 
-```
-├── data/                           
-│   # Human 
-│   ├── train.fasta                 
-│   ├── test.fasta                       
-│   # Mouse 
-│   ├── mouse_train.fasta           
-│   ├── mouse_test.fasta            
-│   # Rice 
-│   ├── rice_train.fasta            
-│   ├── rice_test.fasta             
-│   # Pre-computed graph data (downloaded from Google Drive)
-│   ├── train_embedding_graph.pt
-│   ├── test_embedding_graph.pt
-│   ├── mouse_train_embedding_graph.pt
-│   ├── mouse_test_embedding_graph.pt
-│   ├── rice_train_embedding_graph.pt
-│   └── rice_test_embedding_graph.pt         
-│
-├── pdb/                            # PDB structure files (downloaded from Google Drive)
-│   ├── human/                      
-│   ├── human_seq/                  
-│   ├── mouse/                      
-│   └── rice/
-│
-├── models/                        
-│   ├── fold_1.pth                  
-│   ├── fold_2.pth
-│   ├── fold_3.pth
-│   ├── fold_4.pth
-│   └── fold_5.pth                                        
-│
-├── mouse/                          
-│   ├── mouse_models/              
-│   └── other_method_logs/          
-│
-├── rice/                           
-│   ├── rice_models/               
-│   └── other_method_logs/         
-│
-├── branch_ablation/               
-│   ├── graph_branch/              
-│   └── onehot_branch/             
-│
-├── structure_analysis/              
-│   ├── graphpooling/              
-│   ├── mlp/                        
-│   └── seq/                       
-│
-├── logs/                           # Training and baseline method comparison logs
-│
-├── generate_embedding.py           # Generate ESM-2 embeddings from FASTA sequences
-├── plm_feature.py                  # Construct residue-level spatial graphs from PDB structures
-├── model.py                        
-├── train.py                        
-├── utils.py                        
-└── README.md                       
+                   
 ```
 Owing to the large size of PDB files and pre-computed embeddings, they are provided via Google Drive:
  
@@ -190,11 +134,5 @@ This script:
 ### Step 3: Train the Model
 
 ```bash
-python train.py
+python train_final.py
 ```
-
-This script:
-- Performs 5-fold stratified cross-validation on the training set
-- Saves the best model from each fold to `models/fold_*.pth`
-- Evaluates the ensemble on the independent test set
-- Logs training progress and final metrics
