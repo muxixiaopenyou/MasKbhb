@@ -296,19 +296,14 @@ def main():
             float(current_lr),
         ])
 
-    # Save final model
     save_path = "./model/final_model.pth"
     torch.save(model.state_dict(), save_path)
     logger.info(f"Model saved to {save_path}")
 
-    # Save loss history
-    history_csv = "./model/training_history.csv"
-    save_loss_history_csv(loss_rows, history_csv)
     history_png = "./model/training_loss.png"
     save_loss_curve_png(loss_rows, history_png, title="Training Loss Curve")
     logger.info(f"Saved loss curve: {history_png}")
 
-    # Evaluate on test set
     logger.info("="*30)
     logger.info("Evaluating on test set...")
 
