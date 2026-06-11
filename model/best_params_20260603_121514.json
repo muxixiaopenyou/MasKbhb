@@ -1,0 +1,21 @@
+{
+  "best_params": {
+    "learning_rate": 3.500308623769164e-05,
+    "weight_decay": 0.002603108866776643,
+    "batch_size": 32
+  },
+  "best_mcc": 0.5696714282583775,
+  "best_std_mcc": 0.013057521317023117,
+  "recommended_epochs": 18,
+  "fold_best_epochs": [
+    18,
+    23,
+    18,
+    23,
+    14
+  ],
+  "n_trials": 20,
+  "window_size": 41,
+  "k_folds": 5,
+  "timestamp": "20260603_121514"
+}
