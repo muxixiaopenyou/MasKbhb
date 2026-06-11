@@ -1,0 +1,202 @@
+2026-06-09 14:27:45,285 - Log file: result/SLAM_mouse/training_20260609_142745_SLAM_mouse.log
+2026-06-09 14:27:45,285 - Namespace(project_name='SLAM_mouse', train='../../data/mouse_train.fasta', test='../../data/mouse_test.fasta', model='Models', result='result', PLM='../port_bert/', pdb_dir='/root/autodl-tmp/mouse_pdb', epoch=200, learning_rate=0.0001, batch=256, cpu=4, gpu=0, emd_dim=32, hidden_dim=64, out_dim=32, gnn_layers=5, nneighbor=64, atom_type='CA', dropout=0.5, encoder='cnn,lstm,fea,gnn,plm', seed=0, patience=10, min_delta=0.0, monitor='loss', val_ratio=0.1)
+2026-06-09 14:27:45,286 - Random seed initialization: 0!
+2026-06-09 14:27:50,557 - Train samples: 2025 | Validation samples: 225
+2026-06-09 14:28:29,380 - Test samples: 272
+2026-06-09 14:33:47,458 - Model Trainable Parameter: 0.6611738204956055Mb
+2026-06-09 14:33:47,461 - Early stopping: patience=10, min_delta=0.0, monitor=loss
+2026-06-09 14:33:53,973 - Epoch 1 | 6.5120s | Train | Loss: 0.617593
+2026-06-09 14:33:55,939 - Epoch 1 | 1.9598s | Val | Loss: 0.344986 | Acc: 0.5378 | AUC: 0.5563
+2026-06-09 14:34:01,198 -   -> New best loss: 0.344986 at epoch 1
+2026-06-09 14:34:07,594 - Epoch 2 | 6.3956s | Train | Loss: 0.617121
+2026-06-09 14:34:09,930 - Epoch 2 | 2.3230s | Val | Loss: 0.344989 | Acc: 0.5378 | AUC: 0.5710
+2026-06-09 14:34:09,930 -   -> No improvement. Patience: 1/10
+2026-06-09 14:34:16,317 - Epoch 3 | 6.3864s | Train | Loss: 0.616492
+2026-06-09 14:34:18,535 - Epoch 3 | 2.2125s | Val | Loss: 0.344882 | Acc: 0.5378 | AUC: 0.6041
+2026-06-09 14:34:24,428 -   -> New best loss: 0.344882 at epoch 3
+2026-06-09 14:34:31,470 - Epoch 4 | 7.0411s | Train | Loss: 0.616870
+2026-06-09 14:34:34,173 - Epoch 4 | 2.6884s | Val | Loss: 0.344686 | Acc: 0.5378 | AUC: 0.6388
+2026-06-09 14:34:40,623 -   -> New best loss: 0.344686 at epoch 4
+2026-06-09 14:34:49,077 - Epoch 5 | 8.4540s | Train | Loss: 0.614657
+2026-06-09 14:34:52,931 - Epoch 5 | 3.8407s | Val | Loss: 0.344664 | Acc: 0.5378 | AUC: 0.6493
+2026-06-09 14:34:59,903 -   -> New best loss: 0.344664 at epoch 5
+2026-06-09 14:35:07,348 - Epoch 6 | 7.4440s | Train | Loss: 0.615555
+2026-06-09 14:35:10,527 - Epoch 6 | 3.1617s | Val | Loss: 0.344688 | Acc: 0.5378 | AUC: 0.6577
+2026-06-09 14:35:10,527 -   -> No improvement. Patience: 1/10
+2026-06-09 14:35:17,902 - Epoch 7 | 7.3743s | Train | Loss: 0.616943
+2026-06-09 14:35:20,981 - Epoch 7 | 3.0662s | Val | Loss: 0.344692 | Acc: 0.5378 | AUC: 0.6643
+2026-06-09 14:35:20,981 -   -> No improvement. Patience: 2/10
+2026-06-09 14:35:28,994 - Epoch 8 | 8.0127s | Train | Loss: 0.615441
+2026-06-09 14:35:31,813 - Epoch 8 | 2.8077s | Val | Loss: 0.344467 | Acc: 0.5378 | AUC: 0.6704
+2026-06-09 14:35:38,608 -   -> New best loss: 0.344467 at epoch 8
+2026-06-09 14:35:45,593 - Epoch 9 | 6.9841s | Train | Loss: 0.614431
+2026-06-09 14:35:48,597 - Epoch 9 | 2.9909s | Val | Loss: 0.344233 | Acc: 0.5378 | AUC: 0.6925
+2026-06-09 14:35:57,699 -   -> New best loss: 0.344233 at epoch 9
+2026-06-09 14:36:05,168 - Epoch 10 | 7.4678s | Train | Loss: 0.616330
+2026-06-09 14:36:08,306 - Epoch 10 | 3.1229s | Val | Loss: 0.344604 | Acc: 0.5378 | AUC: 0.6975
+2026-06-09 14:36:08,306 -   -> No improvement. Patience: 1/10
+2026-06-09 14:36:15,318 - Epoch 11 | 7.0119s | Train | Loss: 0.614521
+2026-06-09 14:36:18,301 - Epoch 11 | 2.9765s | Val | Loss: 0.344245 | Acc: 0.5378 | AUC: 0.7065
+2026-06-09 14:36:18,302 -   -> No improvement. Patience: 2/10
+2026-06-09 14:36:25,237 - Epoch 12 | 6.9348s | Train | Loss: 0.613054
+2026-06-09 14:36:27,951 - Epoch 12 | 2.7104s | Val | Loss: 0.344024 | Acc: 0.5378 | AUC: 0.7165
+2026-06-09 14:36:33,893 -   -> New best loss: 0.344024 at epoch 12
+2026-06-09 14:36:40,616 - Epoch 13 | 6.7222s | Train | Loss: 0.614888
+2026-06-09 14:36:43,562 - Epoch 13 | 2.9330s | Val | Loss: 0.346012 | Acc: 0.4667 | AUC: 0.7278
+2026-06-09 14:36:43,562 -   -> No improvement. Patience: 1/10
+2026-06-09 14:36:50,214 - Epoch 14 | 6.6512s | Train | Loss: 0.613078
+2026-06-09 14:36:52,903 - Epoch 14 | 2.6838s | Val | Loss: 0.344691 | Acc: 0.6044 | AUC: 0.7136
+2026-06-09 14:36:52,903 -   -> No improvement. Patience: 2/10
+2026-06-09 14:36:59,786 - Epoch 15 | 6.8825s | Train | Loss: 0.612988
+2026-06-09 14:37:02,695 - Epoch 15 | 2.8978s | Val | Loss: 0.344182 | Acc: 0.5956 | AUC: 0.7181
+2026-06-09 14:37:02,695 -   -> No improvement. Patience: 3/10
+2026-06-09 14:37:09,364 - Epoch 16 | 6.6686s | Train | Loss: 0.612208
+2026-06-09 14:37:12,046 - Epoch 16 | 2.6693s | Val | Loss: 0.342790 | Acc: 0.5378 | AUC: 0.7240
+2026-06-09 14:37:18,315 -   -> New best loss: 0.342790 at epoch 16
+2026-06-09 14:37:25,367 - Epoch 17 | 7.0515s | Train | Loss: 0.609401
+2026-06-09 14:37:28,047 - Epoch 17 | 2.6651s | Val | Loss: 0.343365 | Acc: 0.6800 | AUC: 0.7281
+2026-06-09 14:37:28,047 -   -> No improvement. Patience: 1/10
+2026-06-09 14:37:34,738 - Epoch 18 | 6.6903s | Train | Loss: 0.608654
+2026-06-09 14:37:37,777 - Epoch 18 | 3.0351s | Val | Loss: 0.342030 | Acc: 0.6533 | AUC: 0.7505
+2026-06-09 14:37:44,011 -   -> New best loss: 0.342030 at epoch 18
+2026-06-09 14:37:50,809 - Epoch 19 | 6.7975s | Train | Loss: 0.609008
+2026-06-09 14:37:53,639 - Epoch 19 | 2.8144s | Val | Loss: 0.341223 | Acc: 0.7022 | AUC: 0.7548
+2026-06-09 14:38:01,012 -   -> New best loss: 0.341223 at epoch 19
+2026-06-09 14:38:07,952 - Epoch 20 | 6.8653s | Train | Loss: 0.608086
+2026-06-09 14:38:10,707 - Epoch 20 | 2.7413s | Val | Loss: 0.338740 | Acc: 0.6889 | AUC: 0.7552
+2026-06-09 14:38:16,910 -   -> New best loss: 0.338740 at epoch 20
+2026-06-09 14:38:23,951 - Epoch 21 | 7.0400s | Train | Loss: 0.604630
+2026-06-09 14:38:26,715 - Epoch 21 | 2.7516s | Val | Loss: 0.338532 | Acc: 0.6889 | AUC: 0.7529
+2026-06-09 14:38:34,404 -   -> New best loss: 0.338532 at epoch 21
+2026-06-09 14:38:41,066 - Epoch 22 | 6.6612s | Train | Loss: 0.602185
+2026-06-09 14:38:43,795 - Epoch 22 | 2.7140s | Val | Loss: 0.337422 | Acc: 0.6756 | AUC: 0.7592
+2026-06-09 14:38:49,412 -   -> New best loss: 0.337422 at epoch 22
+2026-06-09 14:38:56,232 - Epoch 23 | 6.8195s | Train | Loss: 0.601706
+2026-06-09 14:38:59,080 - Epoch 23 | 2.8436s | Val | Loss: 0.336815 | Acc: 0.6489 | AUC: 0.7554
+2026-06-09 14:39:05,716 -   -> New best loss: 0.336815 at epoch 23
+2026-06-09 14:39:12,447 - Epoch 24 | 6.7305s | Train | Loss: 0.596111
+2026-06-09 14:39:15,358 - Epoch 24 | 2.8978s | Val | Loss: 0.337128 | Acc: 0.6089 | AUC: 0.7517
+2026-06-09 14:39:15,358 -   -> No improvement. Patience: 1/10
+2026-06-09 14:39:22,013 - Epoch 25 | 6.6545s | Train | Loss: 0.593474
+2026-06-09 14:39:24,754 - Epoch 25 | 2.7295s | Val | Loss: 0.334330 | Acc: 0.6178 | AUC: 0.7593
+2026-06-09 14:39:30,204 -   -> New best loss: 0.334330 at epoch 25
+2026-06-09 14:39:37,219 - Epoch 26 | 7.0139s | Train | Loss: 0.593102
+2026-06-09 14:39:40,087 - Epoch 26 | 2.8621s | Val | Loss: 0.332278 | Acc: 0.6978 | AUC: 0.7668
+2026-06-09 14:39:46,525 -   -> New best loss: 0.332278 at epoch 26
+2026-06-09 14:39:53,174 - Epoch 27 | 6.6482s | Train | Loss: 0.591394
+2026-06-09 14:39:55,846 - Epoch 27 | 2.6681s | Val | Loss: 0.332679 | Acc: 0.7067 | AUC: 0.7582
+2026-06-09 14:39:55,846 -   -> No improvement. Patience: 1/10
+2026-06-09 14:40:02,566 - Epoch 28 | 6.7192s | Train | Loss: 0.584280
+2026-06-09 14:40:05,329 - Epoch 28 | 2.7570s | Val | Loss: 0.328309 | Acc: 0.6756 | AUC: 0.7510
+2026-06-09 14:40:11,389 -   -> New best loss: 0.328309 at epoch 28
+2026-06-09 14:40:18,074 - Epoch 29 | 6.6843s | Train | Loss: 0.578763
+2026-06-09 14:40:21,006 - Epoch 29 | 2.9185s | Val | Loss: 0.323313 | Acc: 0.7067 | AUC: 0.7645
+2026-06-09 14:40:26,601 -   -> New best loss: 0.323313 at epoch 29
+2026-06-09 14:40:34,029 - Epoch 30 | 7.4278s | Train | Loss: 0.576785
+2026-06-09 14:40:37,383 - Epoch 30 | 3.3409s | Val | Loss: 0.325522 | Acc: 0.6756 | AUC: 0.7510
+2026-06-09 14:40:37,383 -   -> No improvement. Patience: 1/10
+2026-06-09 14:40:44,400 - Epoch 31 | 7.0170s | Train | Loss: 0.572221
+2026-06-09 14:40:47,280 - Epoch 31 | 2.8746s | Val | Loss: 0.323020 | Acc: 0.6800 | AUC: 0.7651
+2026-06-09 14:40:55,509 -   -> New best loss: 0.323020 at epoch 31
+2026-06-09 14:41:03,441 - Epoch 32 | 7.9315s | Train | Loss: 0.567729
+2026-06-09 14:41:06,675 - Epoch 32 | 3.2184s | Val | Loss: 0.321145 | Acc: 0.7022 | AUC: 0.7585
+2026-06-09 14:41:13,512 -   -> New best loss: 0.321145 at epoch 32
+2026-06-09 14:41:20,463 - Epoch 33 | 6.9498s | Train | Loss: 0.563145
+2026-06-09 14:41:23,327 - Epoch 33 | 2.8503s | Val | Loss: 0.329193 | Acc: 0.5822 | AUC: 0.7646
+2026-06-09 14:41:23,327 -   -> No improvement. Patience: 1/10
+2026-06-09 14:41:30,210 - Epoch 34 | 6.8824s | Train | Loss: 0.559158
+2026-06-09 14:41:32,946 - Epoch 34 | 2.7233s | Val | Loss: 0.317689 | Acc: 0.7200 | AUC: 0.7649
+2026-06-09 14:41:39,507 -   -> New best loss: 0.317689 at epoch 34
+2026-06-09 14:41:46,646 - Epoch 35 | 7.1375s | Train | Loss: 0.558721
+2026-06-09 14:41:49,903 - Epoch 35 | 3.2441s | Val | Loss: 0.315152 | Acc: 0.7022 | AUC: 0.7591
+2026-06-09 14:41:54,629 -   -> New best loss: 0.315152 at epoch 35
+2026-06-09 14:42:01,446 - Epoch 36 | 6.8162s | Train | Loss: 0.554133
+2026-06-09 14:42:04,172 - Epoch 36 | 2.7223s | Val | Loss: 0.309712 | Acc: 0.7156 | AUC: 0.7711
+2026-06-09 14:42:11,836 -   -> New best loss: 0.309712 at epoch 36
+2026-06-09 14:42:18,532 - Epoch 37 | 6.6956s | Train | Loss: 0.547154
+2026-06-09 14:42:21,474 - Epoch 37 | 2.9295s | Val | Loss: 0.306116 | Acc: 0.6978 | AUC: 0.7699
+2026-06-09 14:42:29,607 -   -> New best loss: 0.306116 at epoch 37
+2026-06-09 14:42:36,349 - Epoch 38 | 6.7415s | Train | Loss: 0.539371
+2026-06-09 14:42:39,083 - Epoch 38 | 2.7213s | Val | Loss: 0.301754 | Acc: 0.7156 | AUC: 0.7788
+2026-06-09 14:42:46,302 -   -> New best loss: 0.301754 at epoch 38
+2026-06-09 14:42:53,028 - Epoch 39 | 6.7246s | Train | Loss: 0.537707
+2026-06-09 14:42:56,015 - Epoch 39 | 2.9739s | Val | Loss: 0.315181 | Acc: 0.6800 | AUC: 0.7831
+2026-06-09 14:42:56,015 -   -> No improvement. Patience: 1/10
+2026-06-09 14:43:02,958 - Epoch 40 | 6.9427s | Train | Loss: 0.538986
+2026-06-09 14:43:06,036 - Epoch 40 | 3.0728s | Val | Loss: 0.309698 | Acc: 0.6933 | AUC: 0.7850
+2026-06-09 14:43:06,036 -   -> No improvement. Patience: 2/10
+2026-06-09 14:43:12,980 - Epoch 41 | 6.9440s | Train | Loss: 0.528001
+2026-06-09 14:43:15,881 - Epoch 41 | 2.8881s | Val | Loss: 0.304190 | Acc: 0.7022 | AUC: 0.7699
+2026-06-09 14:43:15,881 -   -> No improvement. Patience: 3/10
+2026-06-09 14:43:22,828 - Epoch 42 | 6.9459s | Train | Loss: 0.527665
+2026-06-09 14:43:25,762 - Epoch 42 | 2.9225s | Val | Loss: 0.298738 | Acc: 0.7244 | AUC: 0.7895
+2026-06-09 14:43:31,209 -   -> New best loss: 0.298738 at epoch 42
+2026-06-09 14:43:38,065 - Epoch 43 | 6.8551s | Train | Loss: 0.516965
+2026-06-09 14:43:40,912 - Epoch 43 | 2.8341s | Val | Loss: 0.301232 | Acc: 0.7156 | AUC: 0.7918
+2026-06-09 14:43:40,913 -   -> No improvement. Patience: 1/10
+2026-06-09 14:43:47,725 - Epoch 44 | 6.8124s | Train | Loss: 0.517011
+2026-06-09 14:43:50,543 - Epoch 44 | 2.8057s | Val | Loss: 0.311116 | Acc: 0.6756 | AUC: 0.7943
+2026-06-09 14:43:50,544 -   -> No improvement. Patience: 2/10
+2026-06-09 14:43:57,387 - Epoch 45 | 6.8433s | Train | Loss: 0.512583
+2026-06-09 14:44:00,214 - Epoch 45 | 2.8144s | Val | Loss: 0.300404 | Acc: 0.7111 | AUC: 0.7968
+2026-06-09 14:44:00,215 -   -> No improvement. Patience: 3/10
+2026-06-09 14:44:06,963 - Epoch 46 | 6.7479s | Train | Loss: 0.503066
+2026-06-09 14:44:09,761 - Epoch 46 | 2.7862s | Val | Loss: 0.291557 | Acc: 0.7378 | AUC: 0.7959
+2026-06-09 14:44:13,706 -   -> New best loss: 0.291557 at epoch 46
+2026-06-09 14:44:20,869 - Epoch 47 | 7.1630s | Train | Loss: 0.501387
+2026-06-09 14:44:23,605 - Epoch 47 | 2.7228s | Val | Loss: 0.286138 | Acc: 0.7289 | AUC: 0.8028
+2026-06-09 14:44:27,387 -   -> New best loss: 0.286138 at epoch 47
+2026-06-09 14:44:34,447 - Epoch 48 | 7.0597s | Train | Loss: 0.500117
+2026-06-09 14:44:37,203 - Epoch 48 | 2.7440s | Val | Loss: 0.287772 | Acc: 0.7333 | AUC: 0.8046
+2026-06-09 14:44:37,204 -   -> No improvement. Patience: 1/10
+2026-06-09 14:44:43,858 - Epoch 49 | 6.6540s | Train | Loss: 0.493077
+2026-06-09 14:44:46,630 - Epoch 49 | 2.7604s | Val | Loss: 0.291862 | Acc: 0.7378 | AUC: 0.8051
+2026-06-09 14:44:46,630 -   -> No improvement. Patience: 2/10
+2026-06-09 14:44:53,368 - Epoch 50 | 6.7378s | Train | Loss: 0.487329
+2026-06-09 14:44:56,164 - Epoch 50 | 2.7920s | Val | Loss: 0.296668 | Acc: 0.7067 | AUC: 0.8087
+2026-06-09 14:44:56,164 -   -> No improvement. Patience: 3/10
+2026-06-09 14:45:02,878 - Epoch 51 | 6.7129s | Train | Loss: 0.491023
+2026-06-09 14:45:05,785 - Epoch 51 | 2.9014s | Val | Loss: 0.279831 | Acc: 0.7378 | AUC: 0.8137
+2026-06-09 14:45:10,007 -   -> New best loss: 0.279831 at epoch 51
+2026-06-09 14:45:16,711 - Epoch 52 | 6.7041s | Train | Loss: 0.476119
+2026-06-09 14:45:19,401 - Epoch 52 | 2.6782s | Val | Loss: 0.282215 | Acc: 0.7244 | AUC: 0.8106
+2026-06-09 14:45:19,402 -   -> No improvement. Patience: 1/10
+2026-06-09 14:45:26,146 - Epoch 53 | 6.7443s | Train | Loss: 0.475142
+2026-06-09 14:45:29,024 - Epoch 53 | 2.8649s | Val | Loss: 0.284530 | Acc: 0.7422 | AUC: 0.8150
+2026-06-09 14:45:29,024 -   -> No improvement. Patience: 2/10
+2026-06-09 14:45:35,748 - Epoch 54 | 6.7235s | Train | Loss: 0.465066
+2026-06-09 14:45:38,596 - Epoch 54 | 2.8355s | Val | Loss: 0.303176 | Acc: 0.6933 | AUC: 0.8167
+2026-06-09 14:45:38,597 -   -> No improvement. Patience: 3/10
+2026-06-09 14:45:45,328 - Epoch 55 | 6.7304s | Train | Loss: 0.470980
+2026-06-09 14:45:48,327 - Epoch 55 | 2.9867s | Val | Loss: 0.287877 | Acc: 0.7156 | AUC: 0.8200
+2026-06-09 14:45:48,328 -   -> No improvement. Patience: 4/10
+2026-06-09 14:45:55,175 - Epoch 56 | 6.8471s | Train | Loss: 0.459173
+2026-06-09 14:45:57,991 - Epoch 56 | 2.8108s | Val | Loss: 0.316003 | Acc: 0.6533 | AUC: 0.8227
+2026-06-09 14:45:57,991 -   -> No improvement. Patience: 5/10
+2026-06-09 14:46:04,880 - Epoch 57 | 6.8894s | Train | Loss: 0.447124
+2026-06-09 14:46:07,679 - Epoch 57 | 2.7857s | Val | Loss: 0.312727 | Acc: 0.6711 | AUC: 0.8236
+2026-06-09 14:46:07,679 -   -> No improvement. Patience: 6/10
+2026-06-09 14:46:14,457 - Epoch 58 | 6.7775s | Train | Loss: 0.450064
+2026-06-09 14:46:17,182 - Epoch 58 | 2.7119s | Val | Loss: 0.286116 | Acc: 0.7111 | AUC: 0.8233
+2026-06-09 14:46:17,182 -   -> No improvement. Patience: 7/10
+2026-06-09 14:46:23,846 - Epoch 59 | 6.6629s | Train | Loss: 0.456377
+2026-06-09 14:46:26,738 - Epoch 59 | 2.8808s | Val | Loss: 0.293481 | Acc: 0.6844 | AUC: 0.8247
+2026-06-09 14:46:26,739 -   -> No improvement. Patience: 8/10
+2026-06-09 14:46:33,477 - Epoch 60 | 6.7383s | Train | Loss: 0.448597
+2026-06-09 14:46:36,182 - Epoch 60 | 2.6928s | Val | Loss: 0.296830 | Acc: 0.6889 | AUC: 0.8245
+2026-06-09 14:46:36,183 -   -> No improvement. Patience: 9/10
+2026-06-09 14:46:42,780 - Epoch 61 | 6.5974s | Train | Loss: 0.442702
+2026-06-09 14:46:45,535 - Epoch 61 | 2.7436s | Val | Loss: 0.293912 | Acc: 0.6844 | AUC: 0.8262
+2026-06-09 14:46:45,536 -   -> No improvement. Patience: 10/10
+2026-06-09 14:46:45,536 - Early stopping triggered at epoch 61
+2026-06-09 14:46:45,905 - Restored best model from epoch 51 with loss=0.279831
+2026-06-09 14:46:50,033 - Model saved to: Models/SLAM_mouse/SLAM_mouse.pt
+2026-06-09 14:46:50,033 - 
+===== Test Results =====
+2026-06-09 14:46:52,945 - Test metrics
+2026-06-09 14:46:52,945 - ACC:0.754 | BACC:0.754 | SN:0.787 | SP:0.721 | Precision:0.738 | F1:0.762 | MCC:0.508 | AUC:0.847 | AUCPR:0.852 | TN:98 FP:38 FN:29 TP:107
+2026-06-09 14:46:52,972 - 
+===== Final Results =====
+2026-06-09 14:46:52,973 - Best epoch: 51, Best loss: 0.279831
+2026-06-09 14:46:52,977 -  BEST_EPOCH MONITOR  BEST_METRIC  TEST_ACC  TEST_BACC  TEST_SN  TEST_SP  TEST_PRECISION  TEST_F1  TEST_MCC  TEST_AUC  TEST_AUCPR
+         51    loss     0.279831  0.753676   0.753676 0.786765 0.720588        0.737931 0.761566  0.508468  0.847426    0.852367
